@@ -29,6 +29,6 @@ func init() {
 }
 
 func main() {
-	client, _ := airplay.NewClient()
+	client, _ := airplay.NewClient(nil)
 	client.Scrub(opts.position)
 }

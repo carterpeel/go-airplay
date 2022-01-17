@@ -32,7 +32,7 @@ func init() {
 }
 
 func main() {
-	client, _ := airplay.NewClient()
+	client, _ := airplay.NewClient(nil)
 	rand.Seed(time.Now().UnixNano())
 
 	transitions := []airplay.SlideTransition{
